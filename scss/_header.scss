@@ -1,0 +1,72 @@
+/*HEADER*/
+@mixin tamLogoch {
+    width: 20px;
+}
+
+$blanco:white;
+$violeta:blueviolet;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3B2100;
+    align-items: center;
+    
+    .logoMys{
+        width: 120px;
+        margin: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: $blanco;
+        &:hover{
+            color: $violeta;
+        }
+    }
+    h1{
+        text-align: center;
+        color: $blanco;
+    }
+    nav{
+        img{
+            @include tamLogoch;
+        }
+    }
+    .link{
+        color: $blanco;
+        border-radius: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 5px;
+    }
+    
+    .nav-item{
+        background-color: #131313;
+        &:hover{
+            padding-left:20px ;
+            padding-right: 20px;
+            height: 30px;
+        }
+    }
+    .nav-link:hover{
+        color: $violeta;
+    }
+    .yeti{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+
+}
+
+@media (max-width:720px){
+    header{
+        h1{
+            display: none;
+        }
+        .mailTelefono{
+            display: none;
+        }
+    }
+}

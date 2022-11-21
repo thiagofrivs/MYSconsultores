@@ -1,0 +1,64 @@
+@mixin centerSpace{
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    @include centerSpace;
+    display: flex;
+    background-color: #131313;
+    .logo {
+        margin: 10px;
+        a {
+            img {
+                width: 200px;
+            }
+        }
+    }
+    
+    .imagenesFooter{
+        display: flex;
+        
+        @include centerSpace;
+        a img{
+            width: 40px;
+            margin-right: 100px;
+        }
+    }
+    .derechos{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+    .whatsapp{
+        position:fixed;
+        bottom: 10px;
+        right: 20px;
+        a img{
+            width: 70px;
+            &:hover{
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width:720px){
+    footer{
+        .derechos{
+            display: none
+        }
+        .logo{
+            a img{
+                width: 100px;
+            }
+        }
+        .imagenesFooter{
+            a img{
+                width: 30px;
+            }
+        }
+    }
+}
