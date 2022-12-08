@@ -197,7 +197,8 @@ main .papa {
 }
 main .card {
   width: 10rem;
-  margin: 20px;
+  top: 1rem;
+  left: 1rem;
 }
 main .card p {
   color: black;
@@ -332,6 +333,15 @@ main .contactocarru {
 }
 main .contactocarru p {
   font-size: 2rem;
+}
+
+/*Noticias*/
+main .noticiero {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .noticiero a {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */
