@@ -83,8 +83,8 @@ main .container .items {
   align-items: center;
   justify-content: center;
 }
-main .carousel {
-  width: 45% !important;
+main .carru {
+  width: 45%;
 }
 main .link {
   background-color: #131313;
@@ -180,6 +180,9 @@ footer .whatsapp a img:hover {
   }
 }
 /*SERVICIOS*/
+main {
+  padding-bottom: 5rem;
+}
 main a {
   text-decoration: none;
   color: black;
@@ -198,6 +201,7 @@ main .card {
 }
 main .card p {
   color: black;
+  width: 10rem;
 }
 main .superCaja {
   display: flex;
@@ -211,9 +215,6 @@ main .contactate {
 }
 main .contactate a {
   color: skyblue;
-}
-main .contactate a:hover {
-  text-decoration: underline;
 }
 main ul {
   display: flex;
@@ -304,6 +305,7 @@ main label {
 main .titulo {
   color: white;
   text-align: center;
+  padding-top: 5rem;
 }
 main .subtitulo {
   color: white;
@@ -314,13 +316,22 @@ main p {
 main .info {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 5rem;
 }
-main div a {
+main .contactarse a {
   color: skyblue;
 }
-main div a:hover {
+main .contactarse a:hover {
   color: white;
+}
+main .contactocarru {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .contactocarru p {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */

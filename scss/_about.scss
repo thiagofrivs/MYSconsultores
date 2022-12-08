@@ -1,9 +1,13 @@
 /*About*/
 
+
+
 main{
+    
     .titulo{
         color: white;
         text-align: center;
+        padding-top: 5rem;
     }
     .subtitulo{
         color: white;
@@ -11,17 +15,27 @@ main{
     p{
         width: 15rem;
     }
+    
     .info{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-top: 5rem;
     }
-    div{
+    .contactarse{
         a{
             color: skyblue;
             &:hover{
                 color: white;
             }
+        }
+    }
+    .contactocarru{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            font-size:2rem;
         }
     }
 }
