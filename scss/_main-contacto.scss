@@ -6,19 +6,43 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
     form{
         margin-top: 60px;
         margin-bottom: 60px;
         width: 40%;
+        border: 3px solid rgb(53, 50, 50);;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .nombreApellido{
             display: flex;
+            justify-content: space-between;
+            gap: 3rem;
         }
         label{
             color: white;
         }
         .item{
-            padding: 30px;
+            padding: 1rem 0;
+        }
+        .email{
+            width: 100%;
+        }
+        .textarea, #textarea{
+            width: 100%;
+        }
+        button{
+            background-color: grey;
+            border-radius: 20rem;
+            border: none;
+            width: 12rem;
+            padding: .5rem;
+            &:hover{
+                background-color: rgb(148, 148, 148);
+            }
         }
     }
     .mapa{
@@ -29,13 +53,7 @@ main{
             height: 50vh;
         }
     }
-    .textarea{
-        width: 100%;
-    }
-    textarea{
-        width: 100%;
-    }
-    .email{
+    .col-auto{
         width: 100%;
     }
     label{

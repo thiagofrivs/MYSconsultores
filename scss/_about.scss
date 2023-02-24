@@ -20,7 +20,8 @@ main{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 5rem;
+        margin: 5rem 10rem;
+        
     }
     .contactarse{
         a{
@@ -34,8 +35,18 @@ main{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
+        img{
+            width: 30rem;
+        }
         p{
             font-size:2rem;
+        }
+        a{
+            color: skyblue;
+            &:hover{
+                color: white;
+            }
         }
     }
 }

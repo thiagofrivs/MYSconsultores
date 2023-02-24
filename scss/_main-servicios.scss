@@ -26,17 +26,25 @@ main{
     
     .papa{
         @include centerSpace;
-        display: inline-block;
+        @include columna;
+        display: flex;
+        margin-top: 4rem;
+        gap: 1rem;
+        .primario{
+            gap: 3rem;
+        }
+        .secundario{
+            gap: 3rem;
+        }
     }
     .card{
-        width: 10rem;
-        top: 1rem;
-        left: 1rem;
+        width: 13rem;
+        height: 18rem;
         p{
             color: $color;
             width: 10rem;
-            
         }
+        
     }
     .superCaja{
         display: flex;
